@@ -72,9 +72,9 @@ export default class Board extends React.Component {
   render() {
     return (
       <div className="board">
-        <div>
+        <div class="winner">
           {this.state.winner
-            ? `The winner is ${this.state.winner}`
+            ? `The winner is ${this.state.winner}!`
             : "No winner yet!"}
         </div>
         {this.state.values.slice(0, N).map((_, row) => (
